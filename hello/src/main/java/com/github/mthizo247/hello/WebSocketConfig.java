@@ -23,5 +23,6 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 		config.enableSimpleBroker("/topic");
 		// prefix for send
 		config.setApplicationDestinationPrefixes("/app");
+
 	}
 }

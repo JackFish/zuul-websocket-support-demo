@@ -17,3 +17,4 @@ zuul:
           end-points: /gs-guide-websocket
           brokers:  /topic
           destination-prefixes: /app
+   strip-prefix: true

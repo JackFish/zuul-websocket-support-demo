@@ -1,0 +1,13 @@
+server:
+   port: 7077
+
+eureka:
+  server:
+    enabled: true
+  instance:
+  preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7077/eureka
+    registerWithEureka: false
+    fetchRegistry: false
