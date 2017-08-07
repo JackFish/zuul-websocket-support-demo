@@ -10,6 +10,6 @@ eureka:
        version: ${info.project.version}
   client:
      serviceUrl:
-        defaultZone: http://wechat2.dextrys.com:7077/eureka
+        defaultZone: http://localhost:7077/eureka
 server:
   port: 7079
