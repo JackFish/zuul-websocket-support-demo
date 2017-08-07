@@ -1,0 +1,15 @@
+eureka:
+  instance:
+     appname: hello
+     preferIpAddress: true
+     leaseRenewalIntervalInSeconds: 1
+     leaseExpirationDurationInSeconds: 1
+     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+     metadata-map:
+       profile: ${spring.profiles.active}
+       version: ${info.project.version}
+  client:
+     serviceUrl:
+        defaultZone: http://wechat2.dextrys.com:7077/eureka
+server:
+  port: 7079
